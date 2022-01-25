@@ -1,0 +1,137 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+$primary:  #ce5757;
+$link:  #d6f0fd;
+$background-info: hsl(0, 0%, 99%);
+
+$family-sans-serif: 'DM Sans', sans-serif;
+$body-background-color: #d6f0fd;
+
+$hero-body-padding: 2rem 1.5rem;
+
+$tabs-link-active-color: $primary;
+$tabs-link-active-border-bottom-color: $primary;
+$tabs-border-bottom-width: 2px;
+
+$box-background-color: $background-info;
+/* $box-radius: 16px; */
+$box-padding: 2rem;
+$box-shadow: none;
+
+$input-radius: 8px;
+$input-shadow: none;
+
+$card-radius: 16px;
+$card-shadow: none;
+$card-background-color: $background-info;
+
+$modal-content-width: 800px;
+$modal-card-head-radius: 16px;
+$modal-card-head-border-bottom: none;
+$modal-card-foot-radius: 16px;
+$modal-card-foot-border-top: none;
+
+$table-background-color: $background-info;
+$table-row-hover-background-color: $background-info;
+
+$steps-active-color: $link;
+$steps-completed-color: $link;
+
+form {
+    padding: 32px;
+}
+
+.button.shadow {
+    box-shadow: 0px 10px 11px -10px $primary;
+    border-radius: 6px;
+}
+
+.loader {
+    border-left: 1.1em solid $primary;
+}
+
+.tabs a {
+    color: black !important;
+}
+
+.tabs.is-boxed.is-fullwidth li.is-active {
+    border-radius: 16px 16px 0 0;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.tabs.is-boxed.is-fullwidth li.is-active {
+    border-radius: 16px 16px 0 0;
+    border: none;
+}
+
+.tabs.is-boxed.is-fullwidth li.is-active a {
+    color: $primary !important;
+    border-radius: 16px 16px 0 0;
+    border: none;
+}
+
+.is-checkradio[type="checkbox"].is-primary:checked + label::after, .is-checkradio[type="checkbox"].is-primary:checked + label:after {
+    border-width: 3px;
+}
+
+thead tr th .icon-text {
+    color: $primary;
+}
+
+.icon-text {
+    color: $primary;
+}
+
+.credential-items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.credential-item {
+    min-width: calc(50% - 32px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    margin: 16px;
+    border: solid 4px whitesmoke;
+    border-radius: 16px;
+}
+
+.credential-item img.image {
+    max-width: 150px;
+    padding: 16px;
+}
+
+.notification-items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.notification-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/elements/_all.sass";
+@import "../../node_modules/bulma/sass/form/_all.sass";
+@import "../../node_modules/bulma/sass/components/_all.sass";
+@import "../../node_modules/bulma/sass/layout/_all.sass";
+@import "../../node_modules/bulma/sass/grid/_all.sass";
+@import "../../node_modules/bulma-timeline/dist/css/bulma-timeline.sass";
+@import "../../node_modules/bulma-tooltip/src/sass/index.sass";
+@import "../../node_modules/bulma-switch/dist/css/bulma-switch.sass";
+@import "../../node_modules/bulma-o-steps/index.sass";
+@import "../../node_modules/bulma-divider/dist/css/bulma-divider.sass";
+@import "../../node_modules/bulma-checkradio/dist/css/bulma-checkradio.sass";
